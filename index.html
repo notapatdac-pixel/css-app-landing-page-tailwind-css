@@ -119,37 +119,39 @@
       </div>
     </section>
     <!-- Dev 3 -->
-    <section class="contact-section mx-auto flex flex-col justify-center items-center bg-[#F6F6FB] w-[1439px] h-[850px] top-[1096px]
-    left-[1px] pr-[120px] pb-[80px] pl-[120px] gap-[80px]">
-      <div class="contact-card flex flex-col  items-center bg-[#FFFFFFB2] w-[1199px] h-[666px] rounded-[24px] pt-[80px] 
-      pr-[120px] pb-[80px] pl-[120px] gap-[40px]">
-        <h2 class="contact-header w-[261px] h-[48px] font-[700] text-[44px]/[48px] tracking-[-2%]">Get in Touch</h2>
-        <form class="contact-card-input flex flex-col w-[589px] h-[398px] gap-[20px]">
-          <div>
-          <label for="contact-name" class="text-[#5F5F76] font-[400] text-[16px]/[24px] tracking-[0%] w-[589px] h-[76px]">Name</label>
-          <input type="text" placeholder="John Doe" class="text-[#FFFFFF] w-[589px] h-[48px] p-[12px] pl-[16px] rounded-[12px] border-[1px] border-[#E0E0ED]"/>
+    <section
+        class="w-full flex flex-col items-center justify-center gap-10"
+      > 
+      <div class="w-full max-w-[1200px] bg-white rounded-3xl px-5 py-[60px] md:py-20 md:px-[120px] lg:px-[305px] flex flex-col items-center justify-center gap-10">
+        <h2 class="w-max text-center text-[44px] font-bold">Get in Touch</h2>
+        <form class="flex flex-col gap-5 w-full lg:w-[590px]">
+          <div class="flex flex-col gap-1">
+            <label for="name" class="text-[#5f5f76]">Name</label>
+            <input id="name" type="text" placeholder="John Doe" class="p-3 pl-4 rounded-xl border border-[#e0e0ed]"/>
           </div>
-          <div>
-          <label for="contact-email" class="text-[#5F5F76] font-[400] text-[16px]/[24px] tracking-[0%] w-[589px] h-[76px]">Email</label>
-          <input type="email" placeholder="john@example.com" class="text-[#FFFFFF] w-[589px] h-[48px] p-[12px] pl-[16px] rounded-[12px] border-[1px] border-[#E0E0ED]"/>
+          <div class="flex flex-col gap-1">
+            <label for="email" class="text-[#5f5f76]">Email</label>
+            <input id="email" type="email" placeholder="john@example.com" class="p-3 pl-4 rounded-xl border border-[#e0e0ed]"/>
           </div>
-          <div>
-          <label for="contact-message" class="text-[#5F5F76] font-[400] text-[16px]/[24px] tracking-[0%] w-[589px] h-[130px]">Message</label>
-          <textarea class="text-[#FFFFFF] w-[589px] h-[130px] pt-[12px] pr-[2px] pb-[2px] pl-[16px] gap-[10px] rounded-[12px] border-[1px] border-[#E0E0ED]" placeholder="Your message..."></textarea>
+          <div class="flex flex-col gap-1">
+            <label for="message" class="text-[#5f5f76]">Message</label>
+            <textarea name="message" id="message" type="text" rows="3" placeholder="Your message..." class="p-3 pl-4 rounded-xl border border-[#e0e0ed]"></textarea>
           </div>
-          <div>
-            <button type="submit" class="text-[#FFFFFF] font-[600] text-[16px]/[24px] tracking-[0%] bg-[#1A1A2C] w-[589px] h-[56px] rounded-[16px] p-[16px] pr-[36px] pl-[36px] gap-[6px]">Submit</button>
-          </div>
+          <button class="w-full lg:w-[590px] px-9 py-4 rounded-2xl bg-[#1A1A2C] text-white">Submit</button>
         </form>
       </div>
-      <footer class="flex justify-between w-[1199px] h-[24px]">
-        <p class="text-[#5F5F76] font-[500px] text-[16px]/[24px] tracking-[0%]">Acme productivity app ©2024</p>
-        <div class="flex text-[#1A1A2C] font-[600] text-[16px]/[24px] tracking-[0%] gap-[37px]">
-          <a href="#">FAQ</a>
-          <a href="#">Terms</a>
-          <a href="#">AI Policy</a>
-          <a href="#">Pricing</a>
-        </div>
-      </footer>
+    </section>
+    <footer
+      class="w-full flex flex-col items-center justify-center"
+    >
+     <div class="w-full max-w-[1439px] bg-[#f6f6fb] lg:px-[120px] md:px-6 px-5 py-20 flex md:flex-row flex-col gap-6 md:justify-between items-center"
+      <p class="text-[#5f5f76]">Acme productivity app ©2024</p>
+      <div class="flex gap-9 font-semibold">
+        <a href="#">FAQ</a>
+        <a href="#">Terms</a>
+        <a href="#">AI Policy</a>
+        <a href="#">Pricing</a>
+      </div>
+    </footer>
   </body>
 </html>
